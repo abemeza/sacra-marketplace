@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SACRA - The Global Football Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto Mono', monospace;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+    }
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        filter: brightness(0.6);
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 72px;
+        position: relative;
+        z-index: 10;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-family: 'VCR OSD MONO', monospace;
+        color: white;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu-item {
+        font-size: 12px;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 500;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .form-heading {
+        width: 337px;
+        max-width: 100%;
+        font-size: 32px;
+        letter-spacing: 2.5px;
+        text-align: left;
+        overflow-wrap: break-word;
+        margin-bottom: 35px;
+        line-height: 1.2;
+    }
+
+    .form-heading .line {
+        white-space: nowrap; /* 👈 prevents line from breaking */
+    }
+    .form-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .input-box {
+        margin-bottom: 16px;
+        width: 337px;
+        height: 28px;
+        padding: 4px 18px;
+        border-radius: 25px;
+        outline: 1px solid white;
+        display: flex;
+        align-items: center;
+    }
+
+    .input-box input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 12px;
+        width: 100%;    
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .input-box div {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .notify-button {
+        width: 337px;
+        height: 28px;
+        padding: 4px 18px;
+        background: white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .notify-button button {
+        background: white;
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto Mono', monospace;
+        cursor: pointer;
+    }
+    .notify-button div {
+        color: black;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        padding: 0 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        font-size: 12px;
+        color: #ffffff;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+    }
+
+    .socials {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .socials img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <img class="background" src="assets/background.png" alt="Background Image" />
+
+  <div class="header">
+    <div class="logo">SACRA</div>
+    <div class="menu">
+      <div class="menu-item">ABOUT</div>
+      <div class="menu-item">CONTACT</div>
+      <div class="menu-item">JOIN THE CLUB</div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="form-heading">
+        <div class="line">GET NOTIFIED WHEN</div>
+        <div class="line">WE LAUNCH.</div>
+    </div>
+    <form class="form" action="#" method="POST">
+        <div class="input-box">
+            <input type="text" name ="name" placeholder="NAME" required />
+        </div>
+        <div class="input-box">
+            <input type="text" email ="email" placeholder="EMAIL" required />
+        </div>
+        <div class="notify-button">
+            <button type="submit">NOTIFY ME</button>
+        </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">©2025 SACRA – THE GLOBAL FOOTBALL EXCHANGE</div>
+    <div class="socials">
+        <a href="https://x.com/clubsacra" target="_blank">
+            <img src="assets/x.png" alt="X" />
+        </a>
+        <a href="https://www.instagram.com/clubsacra/" target="_blank">
+            <img src="assets/ig.svg" alt="Instagram" />
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="assets/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.tiktok.com/@clubsacra" target="_blank">
+            <img src="assets/tiktok.svg" alt="Tiktok" />
+        </a>
+    </div>
+  </div>
+</body>
+</html>
+
